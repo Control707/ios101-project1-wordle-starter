@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
   @IBOutlet weak var wordsCollectionView: UICollectionView!
@@ -31,6 +32,14 @@ class ViewController: UIViewController {
      */
     // START YOUR CODE HERE
     // ...
+      keyboardController.didSelectString = { [weak self] string in
+          guard let self = self else { return }
+          if string == DELETE_KEY {
+              self.boardController.deleteLastCharacter()
+          } else {
+              self.boardController.enter(string)
+          }
+      }
     // END YOUR CODE HERE
   }
 }

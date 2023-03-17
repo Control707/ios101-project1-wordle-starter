@@ -25,8 +25,8 @@ class LetterCell: UICollectionViewCell {
   }
 
   // MARK: - Public Methods
-  func set(letter: Character) {
-    letterLabel.text = "\(letter)"
+  func set(letter: String) {
+    letterLabel.text = letter
   }
 
   func clearLetter() {
@@ -51,6 +51,27 @@ class LetterCell: UICollectionViewCell {
   func set(style: LetterCellStyle) {
     // START YOUR CODE HERE
     // ...
+      switch style {
+      case .initial:
+          // Set background to black and border to gray for initial state
+          contentView.backgroundColor = .black
+          layer.borderColor = UIColor.gray.cgColor
+      case .incorrect:
+          // Set background and border to specified RGBA for incorrect guesses
+          let incorrectColor = UIColor(red: 0.23, green: 0.23, blue: 0.24, alpha: 1.0)
+          contentView.backgroundColor = incorrectColor
+          layer.borderColor = incorrectColor.cgColor
+      case .correctLetterOnly:
+          // Set background and border to specified RGBA for correct letter, wrong position
+          let correctLetterColor = UIColor(red: 0.69, green: 0.63, blue: 0.30, alpha: 1.0)
+          contentView.backgroundColor = correctLetterColor
+          layer.borderColor = correctLetterColor.cgColor
+      case .correctLetterAndPosition:
+          // Set background and border to specified RGBA for correct letter and position
+          let correctPositionColor = UIColor(red: 0.38, green: 0.55, blue: 0.33, alpha: 1.0)
+          contentView.backgroundColor = correctPositionColor
+          layer.borderColor = correctPositionColor.cgColor
+      }
     // END YOUR CODE HERE
   }
 }
