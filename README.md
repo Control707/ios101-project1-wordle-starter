@@ -1,4 +1,4 @@
-# Project 1 - *Name of App Here*
+# Project 1 - *Wordle*
 
 Submitted by: **Zakaria Sherif**
 
@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-https://imgur.com/a/5Iq8j6W
+https://i.imgur.com/QCdD7jq.gif
 
 
 ## Notes
