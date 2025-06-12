@@ -25,7 +25,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/5Iq8j6W" data-context="false" ><a href="//imgur.com/a/5Iq8j6W"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+https://imgur.com/a/5Iq8j6W
 
 
 ## Notes
